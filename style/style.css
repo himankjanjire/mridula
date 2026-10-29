@@ -347,6 +347,7 @@ body {
   height: 350px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 18%;
   border: 5px solid #ff4da6;
   box-shadow: 0 15px 40px rgba(255, 77, 166, 0.5);
 }
