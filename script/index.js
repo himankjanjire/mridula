@@ -159,8 +159,19 @@ function animationTimeline() {
     .from(".section-three", 0.7, { opacity: 0, y: 10 })
     .to(".section-three", 0.7, { opacity: 0, y: 10 }, "+=2.5")
     .from(".section-four", 0.7, { scale: 0.2, opacity: 0 })
-    .from(".fake-btn", 0.3, { scale: 1, opacity: 1 })
     .staggerTo(".hbd-chatbox span", 1.5, { visibility: "visible" }, 0.05)
+    .fromTo(
+      ".fake-btn",
+      0.45,
+      { opacity: 0, y: 12, scale: 0.85, visibility: "hidden" },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        visibility: "visible",
+        ease: "back.out(1.7)",
+      }
+    )
     .to(
       ".fake-btn",
       0.1,

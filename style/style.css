@@ -295,7 +295,8 @@ body {
   transition: all 0.2s ease;
   cursor: url("./img/birthday-candle.png") 6 2, pointer;
   display: inline-block;
-  visibility: visible !important;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .section-five p {
